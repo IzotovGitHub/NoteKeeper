@@ -8,18 +8,24 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:theme="@style/Theme.NoteKeeper.AppBarOverlay">
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.NoteKeeper.AppBarOverlay"
+        android:visibility="visible">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.NoteKeeper.PopupOverlay" />
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:foregroundGravity="bottom"
+            android:gravity="bottom"
+            app:buttonGravity="bottom"
+            app:popupTheme="@style/Theme.NoteKeeper.AppBarOverlay"
+            app:titleMarginBottom="16dp" />
 
-  </com.google.android.material.appbar.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
   <include layout="@layout/content_main"/>
 
@@ -30,6 +36,6 @@
   android:layout_gravity="bottom|end"
   android:layout_marginEnd="@dimen/fab_margin"
   android:layout_marginBottom="16dp"
-  app:srcCompat="@android:drawable/ic_dialog_email" />
+  app:srcCompat="@android:drawable/ic_input_add" />
 
   </androidx.coordinatorlayout.widget.CoordinatorLayout>

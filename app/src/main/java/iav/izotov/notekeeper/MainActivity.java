@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Добавить создание записи", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null)
                         .setAnchorView(R.id.fab).show();
             }
         });
@@ -53,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.dropdown_menu, menu);
         return true;
     }
 

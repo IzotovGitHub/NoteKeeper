@@ -5,7 +5,8 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">Изотов А.В</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Настройки</string>
+    <string name="dropdown_settings">Настройки</string>
+    <string name="dropdown_info">Инфо</string>
 
     <string name="menu_home">Все записи</string>
 </resources>
